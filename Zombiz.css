@@ -1,0 +1,1001 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color: #7370d8;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+
+/* .container {
+    width:85%;
+    margin:0 auto;
+} */
+
+
+/* navbar */
+
+.headall {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: rgba(115, 112, 216, 1);
+    padding: 20px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: aliceblue;
+    transition: padding;
+}
+
+.nav img {
+    margin-right: 370px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+
+/* banner */
+
+.bod {
+    background-image: url(images/banner/banner1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    animation-name:change ;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    background-size: 100% 100%;
+}
+@keyframes change
+{
+   0%{background-image: url(images/banner/banner1.jpg);}
+   50%{background-image: url(images/banner/banner2.jpg);}
+}
+.banner0 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(115, 112, 215, 0.6);
+}
+
+.bod .banner {
+    margin-top: 200px;
+    color: #fff;
+    position: absolute;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.banner p {
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.banner .btn {
+    margin-top: 30px;
+    padding: 25px 50px;
+    border: none;
+    color: var(--color);
+    background-color: #fff;
+    border: 1px solid #fff;
+    transition: background-color .3s, border .3s;
+}
+
+.banner .btn1 {
+    margin-right: 15px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+/* banner */
+
+
+/* home */
+
+.home {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.home .home1 {
+    text-align: center;
+    margin: 120px 0;
+}
+
+.home1 h2 {
+    margin: 0 0 30px 0;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.home1 p {
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgba(47, 79, 79, 0.5);
+}
+
+.home2 {
+    padding: 100px 30px 30px 20px;
+    text-align: center;
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    background-color: #fff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.home2 img {
+    margin: 30px 0;
+    height: 50px;
+}
+
+.home2 h3 {
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+.home2 p {
+    color: rgba(47, 79, 79, 0.5);
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+
+/* Home */
+
+
+/* About Us */
+
+.about {
+    position: relative;
+    margin-top: 0;
+}
+
+.about1 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    float: left;
+}
+
+.about1 h3 {
+    font-size: 30px;
+    margin: 70px 0 30px 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.about1 p {
+    color: rgba(47, 79, 79, 0.5);
+    font-size: 20px;
+}
+
+.about1 button {
+    margin-top: 30px;
+    padding: 20px 50px;
+    border: none;
+    color: #fff;
+    background: rgba(115, 112, 216, 1);
+    transition: background-color, border;
+}
+
+.about button:hover {
+    background-color: #fff;
+    border: rgb(115, 112, 216) solid 1px;
+    color: rgb(115, 112, 216);
+}
+
+.about2 {
+    background-color: rgba(47, 79, 79, 0.1);
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    float: left;
+}
+
+.about2 img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+
+/* About Us */
+
+
+/* Service */
+
+.service {
+    margin-top: 700px;
+    position: relative;
+}
+
+.service .service1 {
+    text-align: center;
+}
+
+.service1 h2 {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+.service1 p {
+    font-size: 20px;
+    color: rgba(47, 79, 79, 0.5);
+    margin-bottom: 50px;
+}
+
+.service1 .service2 {
+    text-align: center;
+    width: 33.333333%;
+    padding: 15px;
+    float: left;
+}
+
+.service2 img {
+    height: 65px;
+    margin-bottom: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.service2 h3 {
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.service2 p {
+    color: rgba(47, 79, 79, 0.5);
+    font-size: 25px;
+    padding: 15px;
+}
+
+
+/* Service */
+
+
+/* Counter */
+
+.counter {
+    background-image: url(images/counter/counter-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.counter1 {
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+.counter1 img {
+    margin-top: 75px;
+}
+
+.counter1 h2 {
+    position: absolute;
+    top: 75px;
+    left: 85px;
+    color: #fff;
+}
+
+.counter0 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(115, 112, 216, .8);
+}
+
+
+/* Counter */
+
+
+/* Project */
+
+.project {
+    margin-top: 150px;
+    position: relative;
+}
+
+.project0 {
+    
+    margin-top: 80px;
+    
+}
+
+.project button {
+    margin: 100px 0 0 550px;
+    padding: 20px 60px;
+    border: none;
+    color: #fff;
+    background: rgba(115, 112, 216, 1);
+    transition: background-color, border;
+}
+
+.project button:hover {
+    background-color: #fff;
+    border: rgb(115, 112, 216) solid 1px;
+    color: rgb(115, 112, 216);
+}
+
+.project0 h1 {
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.project0 .pp {
+    margin-bottom: 30px;
+    color: rgba(47, 79, 79, 0.5);
+    font-size: 20px;
+}
+
+.column
+{
+    float: left;
+    position: relative;
+    
+   
+} 
+.column .m1 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.column .m1 h2
+{
+    padding-bottom: 10px;
+    color: #fff;
+}
+.column .m1 p
+{
+    padding-left: 5px;
+    color: #fff;
+}
+
+.column1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(115, 112, 215, 0.6);
+        opacity: 0;
+}
+.portfolio .column:hover .column1{
+    opacity: 1;
+}
+/* project */
+
+
+
+
+
+/* Team */
+.team
+{
+    background: rgba(65,62,126,.6);
+    height: 850px;
+    margin-top: 50px;
+    
+}
+.team1
+{
+   
+    margin-top: 150px;
+    position: relative;
+}
+.team10
+{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    color: #fff;
+}
+.team10 h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.team10 p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.team11
+{
+    width: 25%;
+    height: 350px;
+    margin-top: 370px;
+    position :relative;
+    float: left;
+    padding-right: 30px;
+}
+.team11 img
+{
+    width: 100%;
+    height: 100%;
+}
+.team11 .team12
+{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    padding: 19px 0px 0px 30px;
+    background: rgba(65,62,126,.8);
+    height: 90px;
+    transition: height 0.5s;
+}
+.team12 h2
+{
+    
+    font-size: 20px;
+}
+
+.team12 button
+{
+    border: none;
+    background-color: transparent;
+    color: #7370d8;
+    opacity: 0;
+}
+.team11:hover .team12 
+{
+   height: 100px;
+}
+.team11:hover .team12 button
+{
+    opacity: 1;
+}
+/* Team */
+
+
+
+/* table */
+.table
+{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    margin-top: 100px;
+}
+.table0
+{
+   
+    text-align: center;
+    margin-bottom: 100px;
+}
+.table0 h2
+{
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.table0 p
+{
+    margin-bottom: 30px;
+    color: rgba(47, 79, 79, 0.5);
+    font-size: 20px; 
+}
+
+.table1
+{
+    width: 22%;
+    height: 600px;
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    opacity: .6;
+}
+.table1:hover{
+    opacity: 1;
+}
+
+.table11{
+    width: 100%;
+    height: 90%;
+    background-color: #7370d8;
+}
+
+.table11 h2
+{
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.table12
+{
+    background-color: aliceblue;
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+}
+.table12 h3
+{
+   padding:20px 0 10px 0;
+   color: rgba(47, 79, 79, 0.5);
+   font-size: 20px;
+}
+.table12 button
+{
+    margin-top: 65px;
+    border: none;
+    color: #fff;
+    background-color: #7370d8;
+    padding: 20px 60px;
+    transition: all 0.4s;
+}
+.table12 button:hover
+{
+    background-color: #fff;
+    color: #7370d8;
+    border: 1px solid #7370d8;
+}
+/* Table */
+
+
+
+/* client */
+ .carousel
+{
+  margin-top: 250px;
+}
+.carousel-inner h2
+{
+    color: #4d4e54;
+}
+.carousel-item img
+{
+    
+    border: #7370d8 2px solid;
+    border-radius: 50%;
+}
+.client-opinion h4
+{
+    color: #7370d8;
+    cursor: pointer;
+}
+.client-opinion p
+{
+    color: #888;
+    font-size: 24px;
+    font-family: 'Poppins', sans-seri
+}
+.client-opinion span
+{
+    color: #888;
+    font-size: 18px;
+}
+.carousel-indicators li
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+   
+} 
+
+
+
+/* logo */
+.logo
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgba(115, 112, 216, 1);;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.logo1
+{
+    float: left;
+    margin-top: 100px;
+    padding-right: 78px;
+}
+/* logo */
+
+
+
+/* blog */
+.blog
+{
+    height: 800px;
+    position: relative;
+    
+}
+.blog10
+{
+    text-align: center;
+}
+.blog10 h2
+{
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 35px;
+}
+.blog10 p
+{
+    margin-bottom: 65px;
+    color: rgba(47, 79, 79, 0.7);
+    font-size: 20px;
+}
+.blog11
+{
+    width: 30%;
+    /* height: 300px; */
+    background-color: aliceblue;
+    float: left;
+    margin-right: 33px;
+    position: relative;
+}
+.blog11 .blog111
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 360px;
+    width: 100%;
+    background-color: rgba(115, 112, 216, 0.7);
+    opacity: 0;
+    z-index: 2;
+}
+.blog11:hover .blog111
+{
+    opacity: 1; 
+}
+.blog11 span
+{
+    color: #7370d8;
+}
+.blog11 img
+{
+    width: 100%;
+    padding-bottom: 20px;
+    transition: transform 0.7s;
+}
+.blog11:hover img
+{
+    transform: scale(1.04);
+}
+.blog11 p
+{
+    font-style: italic;
+    color: black;
+    padding-bottom: 20px ;
+    font-size: 18px;
+}
+.blog button
+{
+    position: relative;
+    /* margin-top: 300px;
+    margin-left: 480px; */
+    border: none;
+    color: #fff;
+    background-color: #7370d8;
+    padding: 20px 60px;
+    margin-top: 150px;
+    margin-left: 480px;
+    transition: all 0.4s;
+}
+.blog button:hover
+{
+    background-color: #fff;
+    color: #7370d8;
+    border: 1px solid #7370d8;
+}
+/* blog */
+
+
+/* Map */
+.map
+{
+    position: relative;
+    height: 1200px;
+    margin-top: 150px;
+    background-image: url(images/footer/map.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.mapp
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:  rgba(115, 112, 216, .8);;
+}
+.map0
+{
+    position: absolute;
+    text-align: center;
+}
+.map0 h2
+{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 35px;
+}
+.map0 p
+{
+    margin-bottom: 65px;
+    color: #fff;
+    font-size: 20px;
+}
+.map1
+{
+    position: absolute;
+    margin-top: 250px;
+}
+.map11
+{
+    float: left;
+    width: 50%;
+}
+.map110 h3,.map110 p
+{
+    margin-bottom: 45px;
+    color: #fff;
+}
+.map110 h3
+{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.map111 h2
+{
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #fff;
+}
+.map111 input,textarea
+{
+    margin-right: 40px;
+    margin-bottom: 30px;
+    padding: 18px 21px;
+	border: 1px solid #f9faff;
+	outline:0;
+    background:#f9faff;
+    color: #888;
+}
+.map button
+{
+    margin-left: 880px;
+    border: none;
+    color: #fff;
+    background-color: #7370d8;
+    padding: 20px 50px;
+    transition: all 0.4s;
+}
+.map button:hover
+{
+    background-color: #fff;
+    color: #7370d8;
+    border: 1px solid #7370d8;
+}
+/* map */
+
+/* newproj */
+.newproj
+{
+    position: relative;
+    height: 200px;
+    background: #7370d8;
+}
+.newproj button
+{
+    margin-left: 900px;
+    margin-top: 60px;
+    border: 1px #fff solid;
+    color: #fff;
+    background-color: #7370d8;
+    padding: 20px 50px;
+    transition: all 0.4s;  
+}
+.newproj button:hover
+{
+    background-color: #fff;
+    color: #7370d8;
+    border: 1px solid #7370d8;
+}
+.newproj h2
+{
+    position: absolute;
+   margin-top: 70px;
+   margin-right: 30px;
+   color: #fff;
+   font-size: 35px;
+}
+/* newproj */
+
+
+/*Footer*/
+.footer
+{
+    background-color: #212135;
+} 
+.footer .foot ul li:hover a
+{
+    transform: rotate(2);
+    color: #fff;
+}
+.footer .foot .popo
+{
+    transition: color;
+}
+.footer .foot .popo p:hover
+{
+    color: #7370d8;
+}
+.footer .foot input
+{
+    background-color: #3d3d4d;
+    border: none;
+}
+.footer .foot a:hover
+{
+    font-weight: bold;
+    color: #fff;
+    transform: rotate(4);
+}
+.icon
+{
+    background-color: grey;
+    border-radius: 10%;
+}
+.popo,.sq{
+    position: relative;
+}
+.popo::after
+{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 190px;
+    margin-top: 7px;
+    left: 0;
+    width: 250px;
+    height: 1px;
+}
+.footer i:hover
+{
+     background-color: #fff;
+     cursor: pointer;
+}
+.footer .popo
+{
+   color: #888;
+   
+}
+.footer .popo p:hover
+{
+    color: #7370d8;
+    cursor: pointer;
+}
+
+.foot .sq::after
+{
+    content: "GO";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 72px;
+    left: 210px;
+    background-color: #7370d8;
+    width: 60px;
+    height: 56px;
+    cursor: pointer;
+    
+}
+
+/* footer */
+
+
+/* final */
+.final
+{
+    background-color: #1a1a2a;
+    position: relative;
+}
+.final button
+{
+    border: none;
+    background-color: transparent;
+    color: #7370d8;
+    position: absolute;
+    top: 0;
+    left: 385px;
+}
+.final .part-2
+{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.final::after
+{
+    content: "";
+    background-color: #7370d8;
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    top: 10;
+    right: 55px;
+    
+
+}
+.final::after:hover
+{
+    border-radius: 50%;
+}
